@@ -1,0 +1,38 @@
+name: Bug report
+description: Something in Merit doesn't work as it should
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead. A screenshot or screen recording helps a lot.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Phone and Android version
+      placeholder: Pixel 9, Android 16
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Merit version
+      description: Customize › About
+      placeholder: 1.0.3
+    validations:
+      required: true
+  - type: dropdown
+    id: navigation
+    attributes:
+      label: Navigation
+      options:
+        - Gestures
+        - Three buttons
+  - type: textarea
+    id: setup
+    attributes:
+      label: Anything about your setup
+      description: Icon style or pack, wallpaper shown or not, a particular tile or widget.
