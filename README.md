@@ -64,8 +64,8 @@ cached per id). The shelf grows out of the tile through a short bridge instead o
 appearing as a separate panel; see *Notes* below for how that is drawn.
 
 **Live tiles.** Weather (Open-Meteo), date, timeline, battery, now playing, steps,
-timer, a Tools tile with timer and stopwatch, a Photos tile, and a way into the
-Index. Each one lays itself out for its size, from a single cell to 4×2.
+timer, a Tools tile with timer and stopwatch, a Photos tile, Contact tiles for the
+people you call or message most, and a way into the Index. Each one lays itself out for its size, from a single cell to 4×2.
 
 **Now.** Missed calls and notifications from the apps you pick land under *Needs
 you*; the messaging apps on the phone are picked for you the first time. Everything
@@ -139,12 +139,13 @@ Every permission is optional. Without it, only the part that needs it goes quiet
 | Calendar | *Later today* and the timeline |
 | Approximate location | Weather where you are (otherwise an approximate city from your network) |
 | Physical activity | The Steps tile, from the phone's step counter |
+| Contacts | Name, photo and number on a Contact tile |
 | Exact alarms, notifications | The timer ringing on time |
 | Query all packages | Listing every installed app, icon packs and widget providers |
 | Request uninstall | *Uninstall* in an app's menu; Android asks to confirm |
 | Expand status bar | Swiping down on the home screen opens notifications |
 
-Notification, calendar and usage data is read on the phone and never leaves it. Merit
+Notification, calendar, contact and usage data is read on the phone and never leaves it. Merit
 has no account and no server; layout and settings are stored locally. Network access is
 used for weather (Open-Meteo, and ipapi.co for an approximate city when location isn't
 allowed), the ads, and Google Play billing. Details are in the
